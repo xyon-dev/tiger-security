@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/payments.css">
+        <link rel="stylesheet" href="css/services.css">
+        <link rel="stylesheet" href="css/team.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- PAYMENTS -->
+        <div id="paypal-container" style="visibility: hidden;">
+            <button onclick="payments()">close</button>
+            <div id="cash-app">
+                <a href="https://cash.app/$TigerSecurity21">pay with cash app</a>
+            </div>
+            <div id="smart-button-container">
+                <div id="paypal-form-container">
+                    <div style="text-align: start"><label for="description">Entity Name </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
+                    <p id="descriptionError" style="visibility: hidden; color:red; text-align: start;">Please enter a description</p>
+                    <div style="text-align: start"><label for="amount">Amount <span>(USD)</span></label><input name="amountInput" type="number" id="amount" value="" ></div>
+                    <p id="priceLabelError" style="visibility: hidden; color:red; text-align: start;">Please enter a price</p>
+                    <div id="invoiceidDiv" style="text-align: start; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
+                    <p id="invoiceidError" style="visibility: hidden; color:red; text-align: start;">Please enter an Invoice ID</p>
+                </div>
+                <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
+            </div>
+        </div>
+        <header id="header-contact">
+            <ul id="header-contact-menu">
+                <!-- <li class="company-name">tiger security</li> -->
+                <li class="header-contact-nav"><a href="https://search.dca.ca.gov/details/1204/PPO/120993/a167db88dae590b1d56ab0e79d439f12">License Number: PPO 12993</a></li>
+                <li class="header-contact-nav email">bryan@tiger-security.org</li>
+                <li class="header-contact-nav header-phone-number">1 (916) 720-1229</li>
+            </ul>
+        </header>
+        <header id="header-nav">
+            <div id="header-nav-container">
+                <span id="logo-text" onclick="nav('home')" class="nav">tiger</span>
+                <nav id="header-nav-menu">
+                    <ul>
+                      <li><button class="header-nav-button nav" onclick="nav('about')">about</button></li>
+                      <li><button class="header-nav-button nav" onclick="payments()">payments</button></li>
+                      <li><button class="header-nav-button nav" onclick="nav('contact')">contact</button></li>
+                    </ul>
+                  </nav>
+            </div>
+        </header>
+        <div id="root"></div>
+        <div id="home">
+            <div id="main-hero">
+                <div id="main-hero-content-container">
+                    <div id="main-hero-content">
+                        <p>
+                            <span class="lead">Tiger Security</span> where integrity, protection and professionalism come together.
+                        </p>
+                        <button id="hero-button" onclick="nav('contact')">contact us</button>
+                    </div>
+                </div>
+            </div>
+            <aside id="services-block">
+                <h1>our services</h1>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, doloribus eveniet! Ipsa rerum cumque, vel, earum odio illum autem dignissimos itaque magnam beatae accusamus voluptates. </p> -->
+                <aside id="services-list">
+                    <section class="service-section">
+                        <h3>guards</h3>
+                        <ul>
+                            <li>armed</li>
+                            <li>unarmed</li>
+                        </ul>
+                    </section>
+                    <section class="service-section">
+                        <h3>commercial</h3>
+                        <ul>
+                            <li>retail</li>
+                            <li>event</li>
+                            <li>healthcare</li>
+                        </ul>
+                    </section>
+                    <section class="service-section">
+                        <h3>corporate</h3>
+                        <ul>
+                            <li>industrial</li>
+                            <li>business park</li>
+                            <li>construction</li>
+                        </ul>
+                    </section>
+                    <section class="service-section">
+                        <h3>residential</h3>
+                        <ul>
+                            <li>hospitality</li>
+                            <li>apartment</li>
+                            <li>community</li>
+                        </ul>
+                    </section>
+                </aside>  
+            </aside>     
+            <!-- CONTACT -->
+            <footer id="footer-contact">
+                <div id="footer-contact-container">
+                    <h3 class="section-label">Contact Us</h3>
+                    <div id="footer-contact-wrapper">
+                        <form id="footer-contact-form" action="mailto:thastings.707@gmail.com" target="blank_" method="POST" autocomplete="on" name="Contact">  
+                            <!--name -->
+                            <!-- <h3 class="name">Contact Us</h3> -->
+                            <label for="fullname" class="sr-only">full name</label>
+                            <input class="name" type="text" name="fullname" id="fullname" required>
+            
+                            <!--contact-->
+                            <label for="email">Your Email</label>
+                            <input type="email" name="email" id="email" required>
+                            
+                            <label for="phone">Phone</label>
+                            <input type="tel" name="phone" id="phone"> 
+                            
+                            <!--MESSAGE SUBJECT-->
+                            <label for="msg-subject">Message Subject</label>
+                        
+                            <!--MESSAGE SUBJECT -->
+                            <input  list="msg-subjects" name="msg-subject" id="msg-subject">
+                            
+                            <!--text area-->
+                            <label for="msg-text">Message</label>
+                            <textarea name="msg-text" id="msg-text" rows="10" cols="50" required></textarea>
+                            <input type="submit" id="footer-contact-form-submit">
+                        </form>   
+                        <div id="contact-block">
+                            <div class="contact-section">
+                                <h5>phone: </h5><span class="phone-number">1 (916) 720-1229</span>
+                            </div>
+                            <ul class="contact-section">
+                                <li><h5>mail</h5></li>
+                                    <li>PO Box 580404</li>
+                                    <li>Elk Grove, CA 95758 </li>
+                            </ul>
+                            <ul class="contact-section">
+                                <li><h5>Office</h5></li>
+                                <li>3925 Power Inn Road</li>
+                                <li>Sacramento, CA 95826</li>
+                            </ul>
+                        </div>    
+                    </div>
+                </div>
+            </footer>
+                    </div>
+        <!-- FOOTER -->
+        <footer id="footer-copyright">
+            <div class="footer-copyright-content">
+                <span class="copyright-text">&copy; Tiger Security 2018 All rights reserved.</span><a href="#" class="developer">Developed by Terence Hastings.</a>
+            </div>   
+        </footer>
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+    <script>
+        function initPayPalButton() {
+            var description = document.querySelector('#smart-button-container #description');
+            var amount = document.querySelector('#smart-button-container #amount');
+            var descriptionError = document.querySelector('#smart-button-container #descriptionError');
+            var priceError = document.querySelector('#smart-button-container #priceLabelError');
+            var invoiceid = document.querySelector('#smart-button-container #invoiceid');
+            var invoiceidError = document.querySelector('#smart-button-container #invoiceidError');
+            var invoiceidDiv = document.querySelector('#smart-button-container #invoiceidDiv');
+    
+            var elArr = [description, amount];
+    
+            if (invoiceidDiv.firstChild.innerHTML.length > 1) {
+            invoiceidDiv.style.display = "block";
+            }
+    
+            var purchase_units = [];
+            purchase_units[0] = {};
+            purchase_units[0].amount = {};
+    
+            function validate(event) {
+            return event.value.length > 0;
+            }
+    
+            paypal.Buttons({
+            style: {
+                color: 'white',
+                shape: 'rect',
+                label: 'paypal',
+                layout: 'vertical',
+                
+            },
+    
+            onInit: function (data, actions) {
+                actions.disable();
+    
+                if(invoiceidDiv.style.display === "block") {
+                elArr.push(invoiceid);
+                }
+    
+                elArr.forEach(function (item) {
+                item.addEventListener('keyup', function (event) {
+                    var result = elArr.every(validate);
+                    if (result) {
+                    actions.enable();
+                    } else {
+                    actions.disable();
+                    }
+                });
+                });
+            },
+    
+            onClick: function () {
+                if (description.value.length < 1) {
+                descriptionError.style.visibility = "visible";
+                } else {
+                descriptionError.style.visibility = "hidden";
+                }
+    
+                if (amount.value.length < 1) {
+                priceError.style.visibility = "visible";
+                } else {
+                priceError.style.visibility = "hidden";
+                }
+    
+                if (invoiceid.value.length < 1 && invoiceidDiv.style.display === "block") {
+                invoiceidError.style.visibility = "visible";
+                } else {
+                invoiceidError.style.visibility = "hidden";
+                }
+    
+                purchase_units[0].description = description.value;
+                purchase_units[0].amount.value = amount.value;
+    
+                if(invoiceid.value !== '') {
+                purchase_units[0].invoice_id = invoiceid.value;
+                }
+            },
+    
+            createOrder: function (data, actions) {
+                return actions.order.create({
+                purchase_units: purchase_units,
+                });
+            },
+    
+            onApprove: function (data, actions) {
+                return actions.order.capture().then(function (orderData) {
+    
+                // Full available details
+                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+    
+                // Show a success message within this page, e.g.
+                const element = document.getElementById('paypal-button-container');
+                element.innerHTML = '';
+                element.innerHTML = '<h3>Thank you for your payment!</h3>';
+    
+                // Or go to another URL:  actions.redirect('thank_you.html');
+                
+                });
+            },
+    
+            onError: function (err) {
+                console.log(err);
+            }
+            }).render('#paypal-button-container');
+        }
+        initPayPalButton();
+    </script>
+    <script src="js/script.js" async defer></script>
+    </body>
+</html>

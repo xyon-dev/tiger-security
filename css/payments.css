@@ -1,0 +1,65 @@
+/* #payments-container {
+  position: absolute;
+    height: 200%;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.75);
+} */
+#payments-container img {
+  width: 100vw;
+  border-bottom: 1px solid #f6f5f5;
+}
+#paypal-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.75);
+}
+#paypal-container button{
+  background: TRANSPARENT;
+  color: #FFF;
+  /* width: 1em; */
+  margin: 50px;
+  border: 0;
+  font-size: 30px;
+  text-decoration: underline;
+}
+#paypal-container label {
+  display: block;
+}
+#paypal-container span {
+  font-size: 0.5em;
+}
+#paypal-form-container {
+  margin: 0 auto;
+}
+#paypal-button-container {
+  margin: 0 auto;
+}
+#smart-button-container {
+  display: flex;
+  flex-direction: column;
+  background: #d5d5df;
+  width: 250px;
+  padding: 20px;
+  margin: 5vh auto;
+  color: #000;
+  border: 1px solid #fff;
+  padding: 50px;
+}
+#descriptionError,
+#priceLabelError,
+#invoiceidError {
+  font-size: 0.75em;
+}
+@media screen and (max-width: 450px) {
+  #paypal-container button{
+    font-size: 20px;
+    margin: 3vh;
+    /* width: 100%; */
+    text-align: left;
+  }
+}

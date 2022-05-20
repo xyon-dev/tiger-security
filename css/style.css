@@ -1,0 +1,520 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+     background: #fff;
+     font-family: sans-serif;
+}
+header{
+    display: flex;
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+#root-content{
+    min-height: 86vh;
+}
+#cash-app{
+    text-align: center;
+    border: 1px solid #a0ffa0;
+    width: 350px;
+    padding: 25px 0;
+    font-size: 20px;
+    margin: 0 auto;
+    text-transform: capitalize;
+    background: #004600;
+}
+#cash-app a{
+    color: #fff;
+}
+#contact{
+    height: 100%;
+}
+#contact-contact-form{
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    padding: 0vh 5vw 0 0;
+    margin: 0 0 3vh 0;
+    border-right: 1px solid black;
+    width: 45%;
+}
+#contact-block{
+    color: #000;
+    width: 20vw;
+    margin: 0;
+    padding: 1vh 0 0 5vw;
+}
+#contact-wrapper{
+    display: flex;
+    flex-flow: wrap-reverse;
+    padding-left: 5px;
+    width: 80%;
+}
+#footer-contact {
+    background-color: #fff4dd;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #footer-contact-wrapper{
+      display: flex;
+      flex-flow: wrap-reverse;  
+      width: 80vw;
+  }
+  #footer-contact-container{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0 10vw 0 10vw;
+  }
+  #footer-contact-form {
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    padding: 0vh 5vw 0 0;
+    margin: 0 0 3vh 0;
+    border-right: 1px solid black;
+    width: 45%;
+  }
+  #footer-contact-form h3 {
+    font-size: 5vw;
+    margin-bottom: 0.5em;
+  }
+  #footer-contact-form input,
+  label {
+    margin-bottom: 1vh;
+  }
+  #footer-contact-form label + input {
+    /* border: 0; */
+    height: 1em;
+    padding: 0.5em;
+  }
+  #footer-contact-form-submit{
+    margin: 3vh 0 0 0;
+    height: 3em;
+    width: 10em;
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+    font-size: 14px;
+  }
+#footer-copyright{
+    background: rgba(0,0,0,0.85);
+    color: #fff;
+    font-size: 0.80vw;
+    height: 10vh;
+    padding: 0 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+#header-contact{
+    padding: 2vh 1vw;
+    width: 98%;
+}
+#header-nav{
+    padding: 2vh 1vw 2vh 2vw;
+    width: 97%;
+}
+#header-contact, #header-nav{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+#header-contact{
+    background: rgba(0,0,0,0.95);
+    font-size: 1.65vh;
+    margin-right: 1vw;
+    padding: 1vh 1vw;
+    /* display */
+    display: flex;
+    align-items: center;
+}
+#header-contact-menu{
+    margin-right: 1vw;
+}
+#header-contact-menu,
+#header-nav-menu{
+    display: flex;
+    align-items: center;
+    margin: 0 2vw 0 auto;
+}
+#header-nav{
+    background: rgba(0,0,0,0.85);
+}
+#header-nav-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#header-nav-menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: transparent;
+    top: auto;
+}
+#hero{
+    color: white;
+}
+#hero-button{
+    padding: 0.5em 2%;
+    border-radius: 0%;
+    border: 1px solid lightgoldenrodyellow;
+    background: transparent;
+    color: lightgoldenrodyellow;
+    margin-top: 1em;
+    font-size: 75%;
+    text-transform: capitalize;
+    width: 25%;
+}
+#logo-text{
+    cursor: default;
+    font-size: 3vh;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+#main-hero{
+    background-image: url('../media/img/security-hero.jpg');
+    background-size: cover;
+    color: white;
+    display: flex;
+    height: 75vh;
+    flex-direction: column;
+    height: 100vh;
+}
+#main-hero-content-container{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#main-hero-content{
+    font-size: 4vw;
+    min-width: 250px;
+}
+/* #paypal-container{
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.75);
+} */
+
+.app-section-label{
+    margin: 3vh 0 3vh 0;
+    font-size: 40px;
+    width: 80%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4vh 0;
+  }
+  .card section {
+    width: 80%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+  }
+  .card img {
+    width: 80%;
+    margin-bottom: 2vh;
+  }
+  .card h3 {
+    margin-bottom: 1vh;
+    text-transform: capitalize;
+  }
+.contact-section{
+    list-style-type: none;
+    margin-bottom: 10vh;
+}
+.contact-section h5{
+    font-size: 22px;
+}
+.contact-section li, .contact-section span{
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+}
+.copyright-text{
+    margin-right: 1em;
+}
+.copyright-text, .developer{
+    font-size: 8px;
+    color: #fff;
+}
+.developer a, .developer a:visited{
+    color: #fff;
+}
+.footer-copyright-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header-contact-nav{
+    margin-left: 1vw;
+}
+.header-contact-nav a{
+    color: white;
+    text-decoration: none;
+}
+.header-contact-nav a:visited{
+    color: white;
+}
+.header-contact-nav.email{
+    border-right: 1px dotted;
+    border-left: 1px dotted;
+    padding: 0 1vw 0;
+}
+.header-nav-button{
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 2.5vh;
+    text-transform: capitalize;
+    padding: 0 0 0 2vw;
+}
+.nav:hover{
+    color: rgb(237, 154, 113);
+}
+.section-label{
+   margin: 4vh 0 8vh 0;
+   font-size: 5vw;
+   width: 80%;
+}
+@media screen and (max-width: 500px) {
+    .header-contact-nav.email{
+        border-right: 0;
+    }
+    .header-phone-number{
+        display: none;
+    }
+}
+@media  screen and (max-width: 674px) {
+    #header-nav-container{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 949px) {
+    #root-content{
+        height: auto;
+        min-height: 86vh;
+    }
+    #contact-block{
+        width: 80vw;
+        margin: 0 auto 3vh;
+        padding: 0 0 1vh 0;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    #contact-container{
+        padding-top: 3vh;
+    }
+    #contact-contact-form{
+        border: 0;
+        margin: 0 auto 3vh;
+        width: 80%;
+        padding: 0;
+    }
+    #contact-contact-form label + input {
+        margin-bottom: 1vh;
+    }
+    #contact-wrapper{
+        width: auto;
+    }
+    #footer-contact-form{
+        border: 0;
+        margin: 0 auto 4vh;
+        padding: 0;
+        width: 100%;
+    }
+    #footer-contact-form-submit{
+        font-size: 14px;
+        margin-top: 4vh;
+    }
+    #header-contact-menu{
+        margin: 0 0 0 8vw;
+    }
+    #header-nav{
+        padding: 2vh 10%;
+        width: 80vw;
+    }
+    #header-nav-menu{
+        margin: 0 0 0 0;
+    }
+    #hero-button{
+        width: auto;
+    }
+    #logo-text{
+        border-right: 1px solid gray;
+        padding-right: 1vw;
+    }
+    #main-hero{
+        min-height: 50vh;
+    }
+    #main-hero-content{
+        margin: 0 auto;
+        width: 80%;
+        font-size: 5vw;
+    }
+    #services-block{
+        height: auto;
+        padding: 0 10vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 50vh;
+    }
+    #services-block h1{
+        margin: 2vh 0;
+        font-size: 40px;
+        text-transform: capitalize;
+    }
+    #services-list{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .app-section-label{
+        margin: 0 auto 2vh;
+    }
+    .contact-section{
+        margin-bottom: 2vh;
+    }
+    .contact-section h5{
+        font-size: 22px;
+    }
+    .contact-section li, .contact-section span{
+        font-size: 18px;
+        color: #000 !important;
+    }
+    /* .header-contact{
+        font-size: 2vh;
+    } */
+    .header-nav-button{
+        font-size: 2.5vh;
+        text-transform: capitalize;
+    }
+    .header-nav-menu{
+        margin: 0;
+    }
+    .section-label{
+        font-size: 40px;
+        width: 80%;
+        margin: 4vh 0;
+    }
+    .service-section h3 {
+        font-size: 22px;
+    }
+    .service-section ul{
+        font-size: 18px;
+        margin: 0 0 4vh 0;
+    }
+}
+@media  screen and (min-width: 950px) {
+    textarea{
+        font-size: 1.25em;
+    }
+    label{
+        margin-bottom: 5px;
+    }
+    label+input{
+        margin-bottom: 10px;
+        padding: 0.25em;
+        height: 1em;
+        font-size: 1.25em;
+    }
+    .sm{ display: none; }
+    #contact{
+        height: 86vh;
+    }
+    #contact-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #contact-block{
+        width: 20vw;
+        margin: 0;
+        padding: 1vh 0 0 5vw;
+    }
+    #footer-contact, #contact{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    #footer-contact{
+        height: 100vh;
+    }
+    #footer-contact-form{
+        width: 45vw;
+        margin: 0;
+    }
+    #footer-copyright{
+        height: 5vh;
+    }
+    /* #header-nav-menu ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background: transparent;
+        top: auto;
+    } */
+    #hero-button{
+        font-size: 75%;
+    }
+    #main-hero-content{
+        width: 75%;
+    }
+    .card{
+        background: white;
+        color: black;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        padding: 4vh 0;
+    }
+    .card section{
+        width: 40vw;
+        max-width: 460px;
+    }
+    .card img{
+        width: 40vw;
+        margin: 0;
+        max-width: 450px;
+    }
+    
+}
+@media  screen and (min-height: 670px) {
+    #header-contact-menu{
+        font-size: 10px;
+    }
+    .header-nav-button{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #header-nav{
+        width: 80%;
+    }
+    #home{
+        width: 100%;
+    }
+}
